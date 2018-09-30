@@ -109,9 +109,13 @@ sudo ln -s clang+llvm-7.0.0-x86_64-apple-darwin clang4
 # 解决原理：强行用新版本的clang替代旧版本的clang，而R依赖的是clang4，所以要链接过去
 
 
-```
-# 报错：
 
+```
+### 7.2 安装包依赖报错：
+```
+brew install libgit2 mariadb-connector-c
+
+```
 
 # 解决方案：在shell中运行
 Write or paste in: defaults write org.R-project.R force.LANG en_US.UTF-8
