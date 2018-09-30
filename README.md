@@ -5,6 +5,7 @@
 ```
 解压 The Unarchiver
 分屏 Spectacle
+https://www.spectacleapp.com
 ```
 
 ## 软件安装
@@ -51,6 +52,6 @@ https://github.com/getlantern/lantern
 MRO:
 https://mran.microsoft.com/download
 Rstudio：
-https://mran.microsoft.com/download
+https://www.rstudio.com/products/rstudio/download/
 
 ### 
