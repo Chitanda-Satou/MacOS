@@ -94,6 +94,19 @@ ld: warning: URGENT: building for OSX, but linking against dylib (/usr/lib/libSy
 
 ```
 
+```
+# clang4 -fopenmp 参数报错的问题
+
+# 解决方案：
+# 从clang的官网上下载mac的二进制文件，解压，例如
+clang+llvm-7.0.0-x86_64-apple-darwin
+sudo mv clang+llvm-7.0.0-x86_64-apple-darwin /usr/local
+sudo mkdir backup
+sudo mv clang4 backup
+sudo ln -s clang+llvm-7.0.0-x86_64-apple-darwin clang4
+
+# 原因：CRAN提供的clang版本太旧了，不支持-fopenmp参数
+# 解决原理：强行用新版本的clang替代旧版本的clang，而R依赖的是clang4，所以要链接过去
 
 
 ```
